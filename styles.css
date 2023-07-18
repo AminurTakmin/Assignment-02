@@ -6,7 +6,9 @@
 
 /* ! Nav-bar starts here */
 nav {
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .gamer-logo-title {
@@ -17,6 +19,7 @@ nav {
 .gamer-logo {
   width: 86.041px;
   height: 40px;
+  margin-right: 20px;
 }
 
 .gamer-title {
@@ -37,7 +40,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 38px 0px;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 .follow {
   width: 230px;
@@ -73,12 +76,88 @@ nav {
 
 /* ! Nav-bar ends */
 
+/* ! Goat starts */
+main {
+  margin: 0 auto;
+}
+
+.goat-container {
+  width: 100%;
+  height: 700px;
+  background-image: url(./images/Group\ 14.png);
+  background-repeat: no-repeat;
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goat {
+  font-size: 5.9rem;
+  font-weight: 800;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+
+.goat-container h2 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.goat-container li {
+  list-style: none;
+  color: #3c354f;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.pink-btn,
+.blue-btn {
+  border-radius: 48px;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  padding: 21px 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+}
+.blue-btn {
+  background: #4ec5f7;
+  margin-left: 24px;
+}
+.cartoons-img-container {
+  /* border: 2px solid; */
+  width: 100%;
+  height: 700px;
+}
+
+.goat-cartoon-sec {
+  display: flex;
+  gap: 115px;
+}
+.cartoon-img {
+  width: 100%;
+  height: 700px;
+  /* border: 2px solid; */
+}
+/* ! Goat ends */
+
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
   .checkouts {
     flex-direction: column;
     gap: 35px;
+  }
+
+  .goat-cartoon-sec {
+    flex-direction: column-reverse;
+    padding: 20px 0px;
   }
 }
 
@@ -88,5 +167,8 @@ nav {
   .checkouts {
     flex-direction: column;
     gap: 15px;
+  }
+  .goat-cartoon-sec {
+    flex-direction: column-reverse;
   }
 }
