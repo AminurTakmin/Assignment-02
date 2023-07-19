@@ -165,6 +165,11 @@ main {
   /* border: 2px solid; */
 }
 .we-are-gamer-container {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,6 +209,53 @@ main {
   font-weight: 700;
 }
 
+/* ! Online starts here */
+.common-title-styles {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.online-title {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.online-descrip {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  /* border: 2px solid red; */
+}
+
+.box-img {
+  height: 350px;
+  width: 300px;
+}
+.box-descrip {
+  width: 300px;
+  height: 60px;
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.box {
+  margin: 0 auto;
+}
+
+.Box-Container {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  /* padding-left: 100px; */
+}
+
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
@@ -218,6 +270,10 @@ main {
     flex-direction: column-reverse;
     padding: 20px 0px;
   }
+  .Box-Container {
+    margin-top: 70px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* ! Tablet Devices */
@@ -229,7 +285,13 @@ main {
     gap: 15px;
     padding: 10px 0px;
   }
+
   .goat-cartoon-sec {
     flex-direction: column-reverse;
+  }
+
+  .Box-Container {
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
