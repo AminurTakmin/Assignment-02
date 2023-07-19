@@ -369,6 +369,7 @@ main {
   border-radius: 48px;
   background: #fff;
   color: #f948b2;
+  margin-bottom: 100px;
 }
 
 /* ! games category starts */
@@ -421,6 +422,68 @@ main {
   color: palevioletred;
 }
 
+/* ! footer starts */
+.footer {
+  width: 100%;
+  /* height: 630px; */
+  background-color: #0b0223;
+}
+.footer-title {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 80px;
+}
+.infos li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.infos {
+  display: grid;
+  grid-template-columns: repeat(6, 8%);
+  align-items: center;
+  justify-content: center;
+  padding-top: 55px;
+}
+.contacts-img {
+  display: grid;
+  grid-template-columns: repeat(6, 5%);
+  justify-content: center;
+  padding-top: 66px;
+  text-align: center;
+}
+
+.terms h6 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.terms {
+  display: grid;
+  grid-template-columns: repeat(4, 10%);
+  justify-content: center;
+  padding-top: 70px;
+  gap: 60px;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
@@ -457,6 +520,18 @@ main {
   .career-container {
     text-align: center;
   }
+
+  .infos,
+  .contacts-img {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 30px;
+  }
+
+  .terms {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+  }
 }
 
 /* ! Tablet Devices */
@@ -483,5 +558,17 @@ main {
   .We-are-gamer-descrip,
   .we-are-gamer-items {
     text-align: center;
+  }
+
+  .infos,
+  .contacts-img {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 30px;
+  }
+
+  .terms {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 100px;
   }
 }
