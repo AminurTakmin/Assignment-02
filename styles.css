@@ -251,14 +251,10 @@ main {
 }
 
 .Box-Container {
-  /* width: 100%; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 0.1fr);
+  justify-content: center;
   gap: 24px;
-  /* padding-left: 100px; */
-}
-.box-img {
-  /* border: 2px solid red; */
 }
 
 .hover-play-icon {
@@ -276,14 +272,7 @@ main {
   border: 2px solid;
 }
 
-.hover-content {
-  /* background-color: #000; */
-  /* position: absolute; */
-  /* width: 100%; */
-}
-
 .yo1 {
-  /* border: 2px solid blue; */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -307,11 +296,58 @@ main {
   border-radius: 10px;
 }
 
+/* ! play instantly starts here */
+.cow-boy {
+  /* border: 2px solid red; */
+  /* width: 500px; */
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.play-img-1 {
+  height: 570px;
+  max-width: 100%;
+}
+
+.talking-tom {
+  height: 320px;
+  max-width: 100%;
+  position: absolute;
+  bottom: -10%;
+  left: -25%;
+}
+
+.play-instant {
+  /* text-align: right; */
+  font-size: 3rem;
+  font-weight: 700;
+}
+.play-color {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-instant-container {
+  width: 100%;
+  /* border: 2px solid; */
+  margin-top: 120px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
   .checkouts,
-  .we-are-gamer-container {
+  .we-are-gamer-container,
+  .play-instant-container {
     flex-direction: column;
     gap: 35px;
     padding: 20px 0px;
@@ -325,13 +361,20 @@ main {
     margin-top: 70px;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .play-instant,
+  .We-are-gamer-descrip,
+  .we-are-gamer-items {
+    text-align: center;
+  }
 }
 
 /* ! Tablet Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .nav-container,
   .checkouts,
-  .we-are-gamer-container {
+  .we-are-gamer-container,
+  .play-instant-container {
     flex-direction: column;
     gap: 15px;
     padding: 10px 0px;
@@ -344,5 +387,11 @@ main {
   .Box-Container {
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .play-instant,
+  .We-are-gamer-descrip,
+  .we-are-gamer-items {
+    text-align: center;
   }
 }
