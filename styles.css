@@ -128,7 +128,6 @@ main {
   margin-left: 24px;
 }
 .cartoons-img-container {
-  border: 2px solid;
   width: 100%;
   height: 700px;
 }
@@ -321,12 +320,12 @@ main {
 }
 
 /* ! Career section starts */
+
 .career-container {
   background-image: url(./images/Group\ 14.png);
   background-repeat: no-repeat;
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
   margin-top: 150px;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +371,56 @@ main {
   color: #f948b2;
 }
 
+/* ! games category starts */
+.all-games-catag {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.games-category-container {
+  margin: 120px 0;
+  display: grid;
+
+  grid-template-columns: repeat(5, 0.1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  text-align: center;
+}
+
+.games-category {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.category-img {
+  padding-left: 10px;
+}
+
+.category-title {
+  color: #0b0223;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.role-play {
+  margin-left: 100px;
+}
+
+.games-category:hover {
+  border: 2px solid palevioletred;
+}
+
+.category-title:hover {
+  color: palevioletred;
+}
+
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
@@ -392,6 +441,11 @@ main {
     flex-direction: column-reverse;
     padding: 20px 0px;
   }
+
+  .games-category-container {
+    grid-template-columns: repeat(3, 0.1fr);
+  }
+
   .Box-Container {
     margin-top: 70px;
     grid-template-columns: repeat(1, 1fr);
