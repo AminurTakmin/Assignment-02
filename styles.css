@@ -86,7 +86,6 @@ main {
   height: 700px;
   background-image: url(./images/Group\ 14.png);
   background-repeat: no-repeat;
-  /* border: 2px solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +130,7 @@ main {
   margin-left: 24px;
 }
 .cartoons-img-container {
-  /* border: 2px solid; */
+  border: 2px solid;
   width: 100%;
   height: 700px;
 }
@@ -143,16 +142,76 @@ main {
 .cartoon-img {
   width: 100%;
   height: 700px;
-  /* border: 2px solid; */
 }
 /* ! Goat ends */
+
+/* ! we are gamer section start */
+
+.colured-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.We-are-gamer-descrip {
+  text-align: right;
+  margin: 25px 0px;
+  color: #534c64;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 415px;
+  /* border: 2px solid; */
+}
+.we-are-gamer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 240px;
+  gap: 60px;
+  text-align: right;
+}
+.we-are-gamer-photo {
+  width: 100%;
+  height: 420px;
+}
+
+.ellipsis {
+  width: 135px;
+  /* border: 2px solid blue; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* text-align: right; */
+}
+.we-are-gamer-items {
+  /* text-align: right; */
+  /* border: 2px solid; */
+}
+
+.unleash {
+  margin-top: 24px;
+  display: flex;
+  justify-content: right;
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.unleash-descrip {
+  color: #534c64;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
 /* ! Mobile Devices */
 @media screen and (max-width: 576px) {
   .nav-container,
-  .checkouts {
+  .checkouts,
+  .we-are-gamer-container {
     flex-direction: column;
     gap: 35px;
+    padding: 20px 0px;
   }
 
   .goat-cartoon-sec {
@@ -164,9 +223,11 @@ main {
 /* ! Tablet Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .nav-container,
-  .checkouts {
+  .checkouts,
+  .we-are-gamer-container {
     flex-direction: column;
     gap: 15px;
+    padding: 10px 0px;
   }
   .goat-cartoon-sec {
     flex-direction: column-reverse;
