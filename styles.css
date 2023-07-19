@@ -6,7 +6,6 @@
 
 /* ! Nav-bar starts here */
 nav {
-  /* max-width: 1920px; */
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -40,7 +39,6 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 38px 0px;
-  /* border: 2px solid; */
 }
 .follow {
   width: 230px;
@@ -162,7 +160,6 @@ main {
   font-size: 1rem;
   font-weight: 400;
   width: 415px;
-  /* border: 2px solid; */
 }
 .we-are-gamer-container {
   background: linear-gradient(
@@ -184,15 +181,10 @@ main {
 
 .ellipsis {
   width: 135px;
-  /* border: 2px solid blue; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   /* text-align: right; */
-}
-.we-are-gamer-items {
-  /* text-align: right; */
-  /* border: 2px solid; */
 }
 
 .unleash {
@@ -228,7 +220,6 @@ main {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 48px;
-  /* border: 2px solid red; */
 }
 
 .box-img {
@@ -289,8 +280,6 @@ main {
 
 /* ! play instantly starts here */
 .cow-boy {
-  /* border: 2px solid red; */
-  /* width: 500px; */
   position: relative;
   top: 0;
   bottom: 0;
@@ -312,7 +301,6 @@ main {
 }
 
 .play-instant {
-  /* text-align: right; */
   font-size: 3rem;
   font-weight: 700;
 }
@@ -324,7 +312,6 @@ main {
 
 .play-instant-container {
   width: 100%;
-  /* border: 2px solid; */
   margin-top: 120px;
   text-align: right;
   display: flex;
@@ -335,7 +322,6 @@ main {
 
 /* ! Career section starts */
 .career-container {
-  /* width: 1920px; */
   background-image: url(./images/Group\ 14.png);
   background-repeat: no-repeat;
   background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
@@ -344,7 +330,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: left; */
 }
 
 .career-title {
