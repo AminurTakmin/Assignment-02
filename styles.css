@@ -2,6 +2,7 @@
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 /* ! Nav-bar starts here */
@@ -50,7 +51,6 @@ nav {
   padding: 0px 24px;
 }
 .checkouts li {
-  list-style: none;
   color: #3c354f;
   font-size: 1.1rem;
   font-weight: 500;
@@ -183,7 +183,6 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* text-align: right; */
 }
 
 .unleash {
@@ -374,6 +373,7 @@ main {
 
 /* ! games category starts */
 .all-games-catag {
+  height: auto;
   display: flex;
   align-items: center;
 
@@ -383,6 +383,7 @@ main {
 .games-category-container {
   margin: 120px 0;
   display: grid;
+  width: 100%;
 
   grid-template-columns: repeat(5, 0.1fr);
   justify-content: center;
@@ -408,6 +409,7 @@ main {
   color: #0b0223;
   font-size: 1.2rem;
   font-weight: 600;
+  padding-right: 10px;
 }
 
 .role-play {
@@ -425,7 +427,6 @@ main {
 /* ! footer starts */
 .footer {
   width: 100%;
-  /* height: 630px; */
   background-color: #0b0223;
 }
 .footer-title {
@@ -506,7 +507,10 @@ main {
   }
 
   .games-category-container {
-    grid-template-columns: repeat(3, 0.1fr);
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+  .role-play {
+    margin-left: 0px;
   }
 
   .Box-Container {
@@ -521,11 +525,19 @@ main {
     text-align: center;
   }
 
+  .career-container {
+    padding: 20px;
+  }
+
   .infos,
   .contacts-img {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 20px 30px;
+  }
+
+  .cow-boy {
+    padding: 30px;
   }
 
   .terms {
@@ -565,6 +577,21 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 20px 30px;
+  }
+
+  .career-container {
+    padding: 20px;
+  }
+
+  .games-category-container {
+    grid-template-columns: repeat(3, 0.1fr);
+  }
+  .role-play {
+    margin-left: 0px;
+  }
+
+  .footer-container {
+    padding-left: 50px;
   }
 
   .terms {
